@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "На вход подается строка, состоящая из одного числа. Напишите программу, которая удваивает его.",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "a = int(input(\"Введите целое число\"))\nnumber = a * 2\nprint(number)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводится число. Вывести его квадрат.",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "a = int(input(\"Введите целое число\"))\nnumber = a ** 2\nprint(number)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводятся часы, минуты и секунды. Вывести, сколько секунд прошло с полуночи.\nВывести, какая часть суток прошла (число от 0 до 1).",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "h = int(input('Часы '))\nm = int(input('Минуты '))\ns = int(input('Секунды '))\ns1 = h*3600+m*60+s\ndaypart=s1/(24*60*60)\ndaypart = round(daypart,4)\nprint(\"секунды\", s1,\"daypart\",daypart)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": " Вводится число. Вывести, оканчивается ли оно на цифру 7, не используя приведение к строке и операции над строками\t",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "number = 345437\nif number % 10 == 7:\n  print(\"True\")",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводятся коэффициенты уравнения ax2+bx+c=0. Вывести его корни(не забыть проверить, что a не равно 0)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "#пример 1 \nimport math\n \nprint(\"Введите коэффициенты для уравнения\")\nprint(\"ax^2 + bx + c = 0\")\na = float(input(\"a =  \"))\nb = float(input(\"b =  \"))\nc = float(input(\"c =  \"))\n \nD = b ** 2 - 4 * a * c\nprint(D)\n \nif D > 0:\n   x1 = (-b + math.sqrt(D)) / (2 * a)\n   x2 = (-b - math.sqrt(D)) / (2 * a)\n   print (round(x1, 2), x2) \nelif D == 0:\n    xn = -b / (2 * a)\n    print(x)\nelse:\n    print(\"No roots\")",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводятся три числа. Вывести максимум из них.",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "list1 = [4,14,5]\nlist1.sort()\nprint(\"Наибольшее число:\", list1[-1])",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводится число. Вывести среднее арифметическое (с точностью до двух знаков после запятой) тех чисел в диапазоне от единицы до введённого числа, которые делятся 5 или являются четными.",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "first_value=1\na = int (input(\"Введите второе число:\"))\nd=0\nb=0\nfor i in range (first_value, a+1):\n    if i % 5 == 0 or i % 2 == 0:\n        d += i\n        b += 1\nc = ((d)/(b))\nc = round (c,2)\nprint(c)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
