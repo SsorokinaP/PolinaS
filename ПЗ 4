@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "Вводится вектор. Вывести максимум из его элементов",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "A = map(int,(await input()).split())",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "print(max(A))",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "ename": "<class 'NameError'>",
+          "evalue": "name 'A' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn [2], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;28mmax\u001b[39m(\u001b[43mA\u001b[49m))\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'A' is not defined"
+          ],
+          "output_type": "error"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "Вводится вектор. Заменить в нем каждое число Фибоначчи на следующее.",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "A=[5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]\nB= map(int,(await input()).split())\nFor i in B:\n    if i in A:\n        Else:\n        For j in A:\n            if i == j:\n                i==A[j+1]\n                B.append(i)\n                Else:\nB.append(i)",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "Данные об email-адресах студентов хранятся в словаре: {Домен:логины}. Нужно дополнить код таким образом,чтобы он вывел все адреса в алфовитном порядке и в формате имя_пользоателя@домен",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "dict = {\n    'rea.ru': ['misha', 'pasha'],\n    'study.com': ['olga', 'nastya', 'igor']\n    }\n\nemail_list = []\nfor domain in dict:\n    for element in dict[domain]:\n        email = element + '@' + domain\n        email_list.append(email)\n        #email_list.append(str(dict[dict[domain].index(element)])+domain)\n\nemail_list.sort()\nfor email in email_list:\n    print(email)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "igor@study.com\nmisha@rea.ru\nnastya@study.com\nolga@study.com\npasha@rea.ru\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
